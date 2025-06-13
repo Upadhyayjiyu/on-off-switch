@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Oven On/Off</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Smart Oven Control Panel</h2>
+    <div class="switch-container">
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" onclick="toggleDevice()">
+        <span class="slider"></span>
+      </label>
+      <p id="statusText">Oven is OFF</p>
+    </div>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="soundOn" src="https://assets.mixkit.co/sfx/preview/mixkit-switch-on-1121.mp3"></audio>
+  <audio id="soundOff" src="https://assets.mixkit.co/sfx/preview/mixkit-switch-off-1122.mp3"></audio>
+
+  <script src="script1.js"></script>
+</body>
+</html>
